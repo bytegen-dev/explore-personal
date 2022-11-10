@@ -82,6 +82,10 @@
         
     }
 
+    /* -webkit-tap-highlight-color: transparent; */
+    body{
+        -webkit-tap-highlight-color: transparent;
+    }
 
 
     /* nav mobile starts here */
