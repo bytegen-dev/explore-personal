@@ -40,7 +40,6 @@ function callcharges() {
 var hamburgerdiv = document.querySelector(".hamburger")
 var mobileLinks = document.querySelector(".mobile-link-holder")
 var mybackdrop = document.querySelector(".backdrop")
-var mybackdropp = document.querySelector(".backdrop2")
 
 
 function kaisen() {
@@ -49,8 +48,3 @@ function kaisen() {
     mybackdrop.classList.toggle("show-backdrop")
 }
 
-function kaisen2() {
-    // hamburgerdiv.classList.toggle("showburger")
-    // mobileLinks.classList.toggle("show-mobile-link-holder")
-    mybackdropp.classList.toggle("show-backdrop2")
-}

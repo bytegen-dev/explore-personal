@@ -547,26 +547,7 @@ footer {
     display: none;
 }
 
-.backdrop2 {
-    width :100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.551);
-    position: fixed;
-    /* z-index: 100; */
-    left: 0;
-    top: 0;
-    display: none;
-    transition: all 1s ease;
-    /* backdrop-filter: blur(5px); */
-    transition: all 0.5s ease;
-    /* z-index: 5; */
-}
 
-
-.show-backdrop2 {
-    display: block;
-    transition: all 0.5s ease;
-}
 
 /* backdrop css codes ends here */
 
