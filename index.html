@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore™</title>
+    <!-- add icon to website -->
+    <link rel="icon" href="./img/commercial-plane.png" type="image/x-icon">
+    <script src="./scrollreveal.min.js"></script>
+</head>
+<!-- linking css files -->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="defaults.css">
+<link rel="stylesheet" href="mobile.css">
+<!-- main.js is linked below code, scroll reveal is linked above-->
+<body>
+    <!-- What will I do without my beautiful preloader 😁, it continues below code tho -->
+    <div id="preloader"></div>
+    <!-- my beautiful backdrop -->
+    <div class="backdrop" onclick="kaisen()"></div>
+    <div class="backdrop2" ></div>
+    <!-- header starts here -->
+    <header>
+        <nav class="nav-mobile" >
+            <div class="explorer-mobile">
+                <h1>explorer</h1>
+            </div>
+            <div class="hamburger" onclick="kaisen()">
+                <div class="menu"></div>
+            </div>
+            <div class="mobile-link-holder">
+                <ul>
+                    <li><a href="#home"> HOME</a></li>
+                    <li><a href="#about"> ABOUT</a></li>
+                    <li><a href="#contact-developer"> CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <nav class="nav-desktop">
+            <div class="explorer-desktop"> 
+                <!-- <img src="./gif/airplane-blue.gif" alt="explorer-logo"> -->
+                <h1>explorer</h1>
+            </div>
+            <div class="desktop-link-holder">
+                <ul>
+                    <li><a href="#home" class="mobile-active-link"> HOME</a></li>
+                    <li><a href="#about"> ABOUT</a></li>
+                    <li><a href="#contact-developer"> CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-banner-section" id="home">
+            <div class="banner-content">
+                <div class="header-text-container">
+                    <h1>explore the world</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos
+                        odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consecteturadipisicing elit.
+                    </p>
+                    <div>
+                        <button class="btn btn-tomato">Learn more
+                            <div>
+                                <img src="./img/right-arrow.png" alt="🔄">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+    <main>
+        <div class="explore" id="about">
+            <div class="explore-holder">
+                <h2>Explore <br /> something <br /> new.</h2>
+                <div class="getstart">
+                    <button class="btn btn-white"> <h1>GET STARTED</h1></button>
+                </div>
+            </div>
+            <div class="explore-holder">
+                <h1>Hiking</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime consectetur impedit vero vitae iusto, consequatur quod molestiae similique adipisci sequi, laborum repudiandae fugit quisquam quam numquam eveniet id magni?</p>
+            </div>
+            <div class="explore-holder">
+                <h1>Sky Diving</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime consectetur impedit vero vitae iusto, consequatur quod molestiae similique adipisci sequi, laborum repudiandae fugit quisquam quam numquam eveniet id magni?</p>
+            </div>
+            <div class="explore-holder">
+                <h1>Snow Boarding</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime consectetur impedit vero vitae iusto, consequatur quod molestiae similique adipisci sequi, laborum repudiandae fugit quisquam quam numquam eveniet id magni?</p>
+            </div>
+            <div class="explore-holder">
+                <h1>Surfing</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime consectetur impedit vero vitae iusto, consequatur quod molestiae similique adipisci sequi, laborum repudiandae fugit quisquam quam numquam eveniet id magni?</p>
+            </div>
+            <div class="explore-holder">
+                <h1>Swimming</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime consectetur impedit vero vitae iusto, consequatur quod molestiae similique adipisci sequi, laborum repudiandae fugit quisquam quam numquam eveniet id magni?</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="box" id="box"> <h1>Subscribe to our Newsletter</h1>
+        <div>
+            <form onsubmit="sendEmail();  reset(); return false;">
+                <div class="form-box">
+                    <input type="text" id="email" name="EmailAddress" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="menuu">
+        <div class="toggle" ><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li style="--i:1"><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li style="--i:2"><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+        <li style="--i:3"><a href="#box"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li style="--i:4"><a href="#"><ion-icon name="key-outline"></ion-icon></a></li>
+        <li style="--i:5"><a href="#"><ion-icon name="videocam-outline"></ion-icon></a></li>
+        <li style="--i:6"><a href="#"><ion-icon name="game-controller-outline"></ion-icon></a></li>
+        <li style="--i:7"><a href="#"><ion-icon name="camera-outline"></ion-icon></a></li>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menuu = document.querySelector('.menuu');
+        toggle.onclick = function(){
+            // alert('hey')
+            menuu.classList.toggle('active')
+        }
+    </script>
+
+    
+    <!-- footer starts here -->
+    <footer>
+        <div class="outro" id="contact-developer">
+            <h2>explorer</h2>
+            <button class="btn btn-white">Get Started</button>
+        </div>
+        <div class="footer-holder">
+            <h2>© 2022 Explorer, Built for Xeraxlabs Internship.</h2>
+            <div class="footer-icon-holder">
+                <!-- <a href="https://www.linkedin.com/in/tertiux44/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/tertiux44" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/scottdhollar" target="_blank"><i class="fa-brands fa-github"></i></a> -->
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/tertiux44/" target="_blank">
+                        <img src="./img/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/tertiux44" target="_blank">
+                        <img src="./img/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/scottdhollar" target="_blank">
+                        <img src="./img/github.png" alt="github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="main.js"></script>
+
+    <!-- preloader continues -->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener ("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+    <script>
+
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () =>{
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up")
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+            
+            if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+            }
+
+
+
+            lastScroll = currentScroll;
+        })
+
+
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "youngzaint149@gmail.com",
+                Password : "EF17A8137A22068C390A001F77909A748EE8",
+                To : 'scotttailor999@gmail.com',
+                // From : document.getElementById("email").value,
+                From : "youngzaint149@gmail.com",
+                Subject : "New Sign Up for NEWSLETTER for DXEXPLORE website",
+                Body : document.getElementById("email").value
+                // Body : document.getElementById("email").value,
+                // Body : document.getElementById("phone").value,
+                // Body : document.getElementById("message").value
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+
+
+</body>
+</html>
